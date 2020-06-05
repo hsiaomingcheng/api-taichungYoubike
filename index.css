@@ -1,0 +1,62 @@
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    text-align: center;
+}
+
+.table-container {
+    margin-bottom: 10px;
+    height: 555px;
+}
+.table-wrap {
+    margin: 0 auto;
+    border-spacing: 5px;
+}
+tr {
+    height: 50px;
+}
+tr:nth-child(even) {
+    background-color: #DDD;
+}
+td {
+    border: 1px solid #DDD;
+    padding: 8px;
+    text-align: left;
+}
+
+.page-wrap {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.button-wrap {
+    text-align: center;
+}
+.button {
+    border: solid 1px #CCC;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    transition: all .3s ease;
+}
+.button:hover {
+    background: #CCC;
+    color: #FFF;
+}
+
+.drop-wrap label {
+    font-size: 20px;
+}
+.drop-select {
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+}
