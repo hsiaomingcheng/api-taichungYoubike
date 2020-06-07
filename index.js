@@ -170,7 +170,7 @@
             callApi: function () {
                 $.ajax({
                     method: 'GET',
-                    url: 'http://e-traffic.taichung.gov.tw/DataAPI/api/YoubikeAllAPI',
+                    url: 'https://script.google.com/macros/s/AKfycbxs3QX-GGwWZiGEloxDiuM81fu6IXidHesQEZaGinQ7YEbMmf0/exec?url=e-traffic.taichung.gov.tw/DataAPI/api/YoubikeAllAPI',
                     dataType: 'text'
                 })
                     .done(function (data) {
