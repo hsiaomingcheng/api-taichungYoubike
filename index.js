@@ -1,4 +1,3 @@
-/* 立即函示 + 閉包 */
 (function () {
     function handleOnload() {
         var buttonPrev = document.getElementById('button-prev');
@@ -121,8 +120,9 @@
                 /* 處理表格渲染 */
                 var head = pageNumber * showNumber;
                 var foot = (pageNumber + 1) * showNumber;
+                var tHead = lang === 'en' ? '<thead><tr><th>Area</th><th>Name</th><th>Address</th></tr></thead>' : '<thead><tr><th>區</th><th>站名</th><th>地址</th></tr></thead>';
 
-                structureDom = '';
+                structureDom = tHead;
                 tableWrap.innerHTML = structureDom;
 
                 renderArray.slice(head, foot).map(ele => {
@@ -190,4 +190,3 @@
 
     executeOnload.execute();
 })();
-/* 立即函示 + 閉包 */

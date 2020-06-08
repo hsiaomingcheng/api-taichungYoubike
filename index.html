@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Taichung Youbike Data</title>
+    <title>台中YouBike站點資訊</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
@@ -9,7 +9,22 @@
 
 <body>
     <div class="page-body">
-        <h2 class="title">台中 Youbike Data</h2>
+        <h2 class="title">台中YouBike站點資訊</h2>
+
+        <div class="select-wrap">
+            <div class="drop-wrap">
+                <label for="drop-menu">選擇顯示指定行政區:</label>
+                <select name="drop-menu" id="area-wrap" class="drop-select"></select>
+            </div>
+
+            <div class="drop-wrap">
+                <label for="drop-lang">選擇顯示語系:</label>
+                <select name="drop-lang" id="lang-wrap" class="drop-select">
+                    <option value="zh-tw">中文</option>
+                    <option value="en">英文</option>
+                </select>
+            </div>
+        </div>
 
         <div class="table-container">
             <table id="table-wrap" class="table-wrap"></table>
@@ -20,19 +35,6 @@
         <div class="button-wrap">
             <div id="button-prev" class="button">上ㄧ頁</div>
             <div id="button-next" class="button">下ㄧ頁</div>
-        </div>
-
-        <div class="drop-wrap">
-            <label for="drop-menu">選擇顯示指定行政區:</label>
-            <select name="drop-menu" id="area-wrap" class="drop-select"></select>
-        </div>
-
-        <div class="drop-wrap">
-            <label for="drop-lang">選擇顯示語系:</label>
-            <select name="drop-lang" id="lang-wrap" class="drop-select">
-                <option value="zh-tw">中文</option>
-                <option value="en">英文</option>
-            </select>
         </div>
     </div>
 </body>
